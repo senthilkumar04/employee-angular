@@ -1,0 +1,30 @@
+<section id="employee-details-container">
+    <div id="employee-details-box" class="mat-elevation-z2">
+        <div *ngIf="isError && !isLoading" class="error-container">
+            <mat-icon>report_problem</mat-icon>
+            <strong class="margin-left-5">{{ errorMessage }}</strong>
+        </div>
+        <div *ngIf="!isError && !isLoading">
+            <mat-list>
+                <mat-list-item class="intro">
+                   <div class="intro-content margin-left-5">
+                        <strong mat-line>{{ employee.employeeName }}</strong>
+                        <h4 mat-line>Employee ID: {{ employee.id }}</h4>
+                   </div>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                    <mat-icon matListIcon>account_balance</mat-icon>
+                    <strong matLine>Salary</strong>
+                    <p matLine>{{ employee.employeeSalary | currency:'USD ':'code' }}</p>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                    <mat-icon matListIcon>sports_handball</mat-icon>
+                    <strong matLine>Age</strong>
+                    <p matLine>{{ employee.employeeAge | age }}</p>
+                </mat-list-item>
+             </mat-list>
+        </div>
+    </div>
+</section>

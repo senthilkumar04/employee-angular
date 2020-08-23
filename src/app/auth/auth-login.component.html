@@ -1,0 +1,28 @@
+<section id="login-container">
+    <div id="login-box" class="mat-elevation-z2">
+        <div class="error-container inline" *ngIf="loginError.isError">
+            <mat-icon class="margin-right-5">report_problem</mat-icon>
+            <strong>{{loginError.message}}</strong>
+        </div>
+        <form id="login-form" [formGroup]="loginForm" (ngSubmit)="login()">
+            <mat-form-field appearance="standard">
+                <mat-label>Email</mat-label>
+                <input matInput placeholder="Type your email address" formControlName="email" required>
+                <mat-error *ngIf="loginForm.invalid && (loginForm.dirty || loginForm.touched)">
+                    <span *ngIf="loginForm.errors?.email">Please provide a valid email address</span>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="standard" class="margin-bottom-10">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" placeholder="Type your password" formControlName="password" required>
+                <mat-error *ngIf="loginForm.invalid && (loginForm.dirty || loginForm.touched)">
+                    <span *ngIf="loginForm.errors?.password">Please provide a password</span>
+                </mat-error>
+            </mat-form-field>
+            <div id="login-action">
+                <button mat-raised-button type="submit" color="primary" class="margin-right-5" [disabled]="loginForm.invalid">Login</button>
+                <button mat-raised-button type="reset" color="warn" class="margin-left-5">Reset</button>
+            </div>
+        </form>
+    </div>
+</section>

@@ -1,0 +1,9 @@
+#employee-container {
+    & table {
+        width: 100%;
+        & .test:nth-child(odd) {
+            background-color: silver;
+        }
+    }
+    border-bottom: 1px solid grey;
+}

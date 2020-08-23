@@ -1,0 +1,68 @@
+{
+    "status": "success",
+    "data": [
+        {
+            "id": "1",
+            "employee_name": "Tiger Nixon",
+            "employee_salary": "320800",
+            "employee_age": "61",
+            "profile_image": ""
+        },
+        {
+            "id": "2",
+            "employee_name": "Tiger Shroff",
+            "employee_salary": "350800",
+            "employee_age": "25",
+            "profile_image": ""
+        },
+        {
+            "id": "3",
+            "employee_name": "Nixon John",
+            "employee_salary": "560800",
+            "employee_age": "41",
+            "profile_image": ""
+        },
+        {
+            "id": "4",
+            "employee_name": "John Doe",
+            "employee_salary": "300800",
+            "employee_age": "26",
+            "profile_image": ""
+        },
+        {
+            "id": "5",
+            "employee_name": "Darren Polar",
+            "employee_salary": "390800",
+            "employee_age": "30",
+            "profile_image": ""
+        },
+        {
+            "id": "6",
+            "employee_name": "Matthew Mike",
+            "employee_salary": "330800",
+            "employee_age": "42",
+            "profile_image": ""
+        },
+        {
+            "id": "7",
+            "employee_name": "Karl Hubbers",
+            "employee_salary": "320805",
+            "employee_age": "48",
+            "profile_image": ""
+        },
+        {
+            "id": "8",
+            "employee_name": "Jeremy Martin",
+            "employee_salary": "3208",
+            "employee_age": "37",
+            "profile_image": ""
+        },
+        {
+            "id": "9",
+            "employee_name": "Matt Nixon",
+            "employee_salary": "32080",
+            "employee_age": "50",
+            "profile_image": ""
+        }
+    ]
+}

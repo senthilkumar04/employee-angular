@@ -1,0 +1,42 @@
+#employee-details-container {
+    width: 100%;
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 480px) {
+        justify-content: flex-start;
+        top: 56px;
+    }
+    #employee-details-box {
+        width: 50%;
+        padding: 0;
+        @media screen and (max-width: 480px) {
+            width: 100%;
+        }
+        .mat-list {
+            .mat-list-item {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                &.intro {
+                    .intro-content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        h4 {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
